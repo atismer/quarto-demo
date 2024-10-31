@@ -9,7 +9,7 @@ format:
     preview-links: auto
     logo: images/quarto.png
     css: styles.css
-    footer: <https://quarto.org>
+    footer: atismer
 ---
 
 ## Hello, There
