@@ -3,7 +3,6 @@ title: "Quarto Presentations"
 subtitle: "Create beautiful interactive slide decks with Reveal.js"
 format:
   revealjs: 
-    theme: dark
     slide-number: true
     chalkboard: 
       buttons: false
@@ -11,8 +10,6 @@ format:
     logo: images/quarto.png
     css: styles.css
     footer: <https://quarto.org>
-resources:
-  - demo.pdf
 ---
 
 ## Hello, There
