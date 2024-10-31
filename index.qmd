@@ -10,6 +10,8 @@ format:
     logo: images/quarto.png
     css: styles.css
     footer: atismer
+bibliography: mdpi_paper_2024.bib
+csl: ieee.csl
 ---
 
 ## Hello, There
@@ -343,8 +345,8 @@ ggplot(mtcars, aes(hp, mpg, color = am)) +
 
 ### Data
 
-```r
-knitr::kable(mtcars)
+```{python}
+pwd
 ```
 :::
 
@@ -468,10 +470,6 @@ RStudio includes an integrated presentation preview pane
 
 ![](images/rstudio.png){.border width="900"}
 
-::: footer
-Learn more: [RStudio](https://quarto.org/docs/tools/rstudio.html)
-:::
-
 ## And More...
 
 -   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) optimized (presentations look great on mobile, swipe to navigate slides)
@@ -479,6 +477,13 @@ Learn more: [RStudio](https://quarto.org/docs/tools/rstudio.html)
 -   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) (step through slides automatically, without any user input)
 -   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).
 
+@helton1981 ist
+
 ::: footer
 Learn more: [Quarto Presentations](https://quarto.org/docs/presentations/revealjs/)
+:::
+
+## References
+
+::: {#refs}
 :::
