@@ -356,7 +356,7 @@ Learn more: [Tabsets](https://quarto.org/docs/presentations/revealjs/#tabsets)
 
 Include Jupyter widgets and htmlwidgets in your presentations
 
-```r
+```{r}
 #| echo: false
 #| fig-height: 5
 library(leaflet)
