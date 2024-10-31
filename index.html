@@ -387,8 +387,6 @@
       margin-right: 0; 
     }
   </style>
-  <script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-  <link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -718,76 +716,6 @@ a_{21}&amp; =b_{21}&amp;
 <p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#tabsets">Tabsets</a></p>
 </div>
 </section>
-<section id="interactive-slides" class="slide level2 smaller" data-transition="slide">
-<h2>Interactive Slides</h2>
-<p>Include Jupyter widgets and htmlwidgets in your presentations</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="co">#| echo: false</span></span>
-<span id="cb8-2"><a></a><span class="co">#| fig-height: 5</span></span>
-<span id="cb8-3"><a></a><span class="fu">library</span>(leaflet)</span>
-<span id="cb8-4"><a></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb8-5"><a></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb8-6"><a></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span><span class="fl">174.768</span>, <span class="at">lat=</span><span class="sc">-</span><span class="fl">36.852</span>, <span class="at">popup=</span><span class="st">"The birthplace of R"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/interactive/widgets/jupyter.html">Jupyter widgets</a>, <a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html">htmlwidgets</a></p>
-</div>
-</section>
-<section id="interactive-slides-1" class="slide level2 smaller" data-transition="slide">
-<h2>Interactive Slides</h2>
-<p>Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">ojs_define</span>(<span class="at">actors =</span> <span class="fu">data.frame</span>(</span>
-<span id="cb9-2"><a></a>  <span class="at">x =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>),</span>
-<span id="cb9-3"><a></a>  <span class="at">y =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
-<span id="cb9-4"><a></a>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="layout-sidebar layout-sidebar-left">
-<div class="cell panel-sidebar">
-<div class="sourceCode cell-code hidden" id="cb10" data-startfrom="385" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 384;"><span id="cb10-385"><a></a>viewof talentWeight <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"talent weight"</span> })</span>
-<span id="cb10-386"><a></a>viewof looksWeight <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"looks weight"</span> })</span>
-<span id="cb10-387"><a></a>viewof minimum <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"min fame"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-<div class="cell panel-fill">
-<div class="sourceCode cell-code hidden" id="cb11" data-startfrom="392" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 391;"><span id="cb11-392"><a></a><span class="im">import</span> { plotActors } <span class="im">from</span> <span class="st">'./actors.js'</span><span class="op">;</span></span>
-<span id="cb11-393"><a></a><span class="fu">plotActors</span>(actors<span class="op">,</span> talentWeight<span class="op">,</span> looksWeight<span class="op">,</span> minimum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-2" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/interactive/ojs/">Observable</a>, <a href="https://quarto.org/docs/interactive/shiny/">Shiny</a>, <a href="https://quarto.org/docs/interactive/layout.html">Component Layout</a></p>
-</div>
-</section>
 <section id="preview-links" class="slide level2">
 <h2>Preview Links</h2>
 <p>Navigate to hyperlinks without disrupting the flow of your presentation.</p>
@@ -927,13 +855,13 @@ a_{21}&amp; =b_{21}&amp;
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/">Quarto Presentations</a></p>
 </div>
+
 <div class="quarto-auto-generated-content">
 <p><img src="images/quarto.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>atismer</p>
 </div>
 </div>
-
 </section>
     </div>
   </div>
@@ -1146,17 +1074,6 @@ a_{21}&amp; =b_{21}&amp;
           RevealZoom
         ]
       });
-    </script>
-    <script type="ojs-module-contents">
-    eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiB0YWxlbnRXZWlnaHQgPSBJbnB1dHMucmFuZ2UoWy0yLCAyXSwgeyB2YWx1ZTogMC43LCBzdGVwOiAwLjAxLCBsYWJlbDogXCJ0YWxlbnQgd2VpZ2h0XCIgfSlcbnZpZXdvZiBsb29rc1dlaWdodCA9IElucHV0cy5yYW5nZShbLTIsIDJdLCB7IHZhbHVlOiAwLjcsIHN0ZXA6IDAuMDEsIGxhYmVsOiBcImxvb2tzIHdlaWdodFwiIH0pXG52aWV3b2YgbWluaW11bSA9IElucHV0cy5yYW5nZShbLTIsIDJdLCB7IHZhbHVlOiAxLCBzdGVwOiAwLjAxLCBsYWJlbDogXCJtaW4gZmFtZVwiIH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJpbXBvcnQgeyBwbG90QWN0b3JzIH0gZnJvbSAnLi9hY3RvcnMuanMnO1xucGxvdEFjdG9ycyhhY3RvcnMsIHRhbGVudFdlaWdodCwgbG9va3NXZWlnaHQsIG1pbmltdW0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3RhbGVudFdlaWdodCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdsb29rc1dlaWdodCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdtaW5pbXVtJykifV19
-    </script>
-    <script type="module">
-    if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-    window._ojs.paths.runtimeToDoc = "../..";
-    window._ojs.paths.runtimeToRoot = "../..";
-    window._ojs.paths.docToRoot = "";
-    window._ojs.selfContained = false;
-    window._ojs.runtime.interpretFromScriptTags();
     </script>
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {

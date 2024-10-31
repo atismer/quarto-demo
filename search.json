@@ -112,20 +112,6 @@
     "text": "Tabsets\n\nPlotData\n\n\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\n\nknitr::kable(mtcars)\n\n\n\n\nLearn more: Tabsets"
   },
   {
-    "objectID": "index.html#interactive-slides",
-    "href": "index.html#interactive-slides",
-    "title": "Quarto Presentations",
-    "section": "Interactive Slides",
-    "text": "Interactive Slides\nInclude Jupyter widgets and htmlwidgets in your presentations\n#| echo: false\n#| fig-height: 5\nlibrary(leaflet)\nleaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=174.768, lat=-36.852, popup=\"The birthplace of R\")\n\nLearn more: Jupyter widgets, htmlwidgets"
-  },
-  {
-    "objectID": "index.html#interactive-slides-1",
-    "href": "index.html#interactive-slides-1",
-    "title": "Quarto Presentations",
-    "section": "Interactive Slides",
-    "text": "Interactive Slides\nTurn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.\nojs_define(actors = data.frame(\n  x = rnorm(100),\n  y = rnorm(100)\n))\n\n\nviewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"talent weight\" })\nviewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"looks weight\" })\nviewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: \"min fame\" })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nimport { plotActors } from './actors.js';\nplotActors(actors, talentWeight, looksWeight, minimum)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLearn more: Observable, Shiny, Component Layout"
-  },
-  {
     "objectID": "index.html#preview-links",
     "href": "index.html#preview-links",
     "title": "Quarto Presentations",
@@ -186,6 +172,6 @@
     "href": "index.html#and-more",
     "title": "Quarto Presentations",
     "section": "And More…",
-    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations\n\n\n\n\natismer"
+    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations\n\n\n\n\n\natismer"
   }
 ]
