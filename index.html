@@ -93,7 +93,27 @@
     code span.va { color: #111111; } /* Variable */
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
-  </style>
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
   <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
   <link rel="stylesheet" href="styles.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -708,7 +728,11 @@ a_{21}&amp; =b_{21}&amp;
 <span id="cb6-4"><a></a>  <span class="fu">geom_smooth</span>(<span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">method =</span> <span class="st">"loess"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-1-2">
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>knitr<span class="sc">::</span><span class="fu">kable</span>(mtcars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="c6e2056b" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<pre><code>'/home/runner/work/quarto-demo/quarto-demo'</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -840,10 +864,7 @@ a_{21}&amp; =b_{21}&amp;
 <h2>Authoring Tools</h2>
 <p>RStudio includes an integrated presentation preview pane</p>
 
-<img data-src="images/rstudio.png" class="border r-stretch" width="900"><div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/tools/rstudio.html">RStudio</a></p>
-</div>
-</section>
+<img data-src="images/rstudio.png" class="border r-stretch" width="900"></section>
 <section id="and-more" class="slide level2">
 <h2>And More…</h2>
 <ul>
@@ -852,8 +873,17 @@ a_{21}&amp; =b_{21}&amp;
 <li><a href="https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide">Auto-Slide</a> (step through slides automatically, without any user input)</li>
 <li><a href="https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex">Multiplex</a> (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).</li>
 </ul>
+<p><span class="citation" data-cites="helton1981"><a href="#/references" role="doc-biblioref" onclick="">[1]</a></span> ist</p>
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/">Quarto Presentations</a></p>
+</div>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+<div id="refs" class="references csl-bib-body" data-entry-spacing="0" role="list">
+<div id="ref-helton1981" class="csl-entry" role="listitem">
+<div class="csl-left-margin">[1] </div><div class="csl-right-inline">R. L. Iman, J. C. Helton, and J. E. Campbell, <span>“An approach to sensitivity analysis of computer models: Part i¿introduction, input variable selection and preliminary variable assessment,”</span> <em>Journal of Quality Technology</em>, vol. 13, no. 3, p. 174¿183, 1981, doi: <a href="https://doi.org/10.1080/00224065.1981.11978748">10.1080/00224065.1981.11978748</a>.</div>
+</div>
 </div>
 
 <div class="quarto-auto-generated-content">

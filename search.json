@@ -109,7 +109,7 @@
     "href": "index.html#tabsets",
     "title": "Quarto Presentations",
     "section": "Tabsets",
-    "text": "Tabsets\n\nPlotData\n\n\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\n\nknitr::kable(mtcars)\n\n\n\n\nLearn more: Tabsets"
+    "text": "Tabsets\n\nPlotData\n\n\nlibrary(ggplot2)\nggplot(mtcars, aes(hp, mpg, color = am)) +\n  geom_point() +\n  geom_smooth(formula = y ~ x, method = \"loess\")\n\n\n\n\n'/home/runner/work/quarto-demo/quarto-demo'\n\n\n\n\n\n\nLearn more: Tabsets"
   },
   {
     "objectID": "index.html#preview-links",
@@ -165,13 +165,20 @@
     "href": "index.html#authoring-tools-1",
     "title": "Quarto Presentations",
     "section": "Authoring Tools",
-    "text": "Authoring Tools\nRStudio includes an integrated presentation preview pane\n\n\nLearn more: RStudio"
+    "text": "Authoring Tools\nRStudio includes an integrated presentation preview pane"
   },
   {
     "objectID": "index.html#and-more",
     "href": "index.html#and-more",
     "title": "Quarto Presentations",
     "section": "And More…",
-    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n\nLearn more: Quarto Presentations\n\n\n\n\n\natismer"
+    "text": "And More…\n\nTouch optimized (presentations look great on mobile, swipe to navigate slides)\nFooter & Logo (optionally specify custom footer per-slide)\nAuto-Slide (step through slides automatically, without any user input)\nMultiplex (allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop).\n\n[1] ist\n\nLearn more: Quarto Presentations"
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "Quarto Presentations",
+    "section": "References",
+    "text": "References\n\n\n[1] R. L. Iman, J. C. Helton, and J. E. Campbell, “An approach to sensitivity analysis of computer models: Part i¿introduction, input variable selection and preliminary variable assessment,” Journal of Quality Technology, vol. 13, no. 3, p. 174¿183, 1981, doi: 10.1080/00224065.1981.11978748.\n\n\n\n\n\n\natismer"
   }
 ]
